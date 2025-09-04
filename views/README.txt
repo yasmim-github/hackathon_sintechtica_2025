@@ -8,5 +8,14 @@ have any prefixes
 HTML classes for text decoration
 
 EInterFont 
-EBrownText
+ETextColor
 TextDecNone
+
+Se quiser adotar a funcionalidade de Dia/Noite, use essas cores 
+
+Sidebar: #1b1b2b
+Content : #151623
+Cor da fonte: #4c466d
+
+
+

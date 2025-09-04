@@ -6,16 +6,22 @@
 }
 
 
-.ESideBar{
+.ESideBarColor{
     background-color: #e0dfdc;
 }
 
-.EContent{
+.EContentColor{
     background-color: #eeece8;
 }
 
+.ETextColor{
+    color: #6a4e3e;
+}
+
+
+
 .EFlexRow{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
 }
 
@@ -32,6 +38,7 @@
 }
 
 .EFlexCenter{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -45,10 +52,6 @@
     height: 80px;
     border-radius: 50%;
     box-shadow: 0px 5px 5px #000000;
-}
-
-.EBrownText{
-    color: #6a4e3e;
 }
 
 
@@ -105,4 +108,13 @@ font-family: "Inter", sans-serif;
 
 .ETextDecNone{
     text-decoration: none;
+}
+
+
+
+/* Content */
+
+.EAkademosIconPic{
+    height: 200px;
+    border-radius: 50%;
 }
