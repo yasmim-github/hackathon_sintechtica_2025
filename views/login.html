@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Unico Uni</title>
+    <link rel="stylesheet" href="../static/Stylesheets/login.css">
+    <script src="../scripts/login.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="EFlexCol logo">
+                <h5 style="font-weight: bolder;" class="EInterFont ETextColor">Hackathon Sintechtica 2025</h5>
+                <br>
+                <p class="EInterFont ETextColor">Akademos AI</p>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <h1>Crie sua conta</h1>
+            <p class="subtitle">Preencha os dados abaixo para se cadastrar</p>
+            
+            <div class="success-message" id="successMessage">
+                Cadastro realizado com sucesso! Redirecionando...
+            </div>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="firstName">Nome</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <div class="error-message" id="firstNameError">Por favor, insira seu nome</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Sobrenome</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <div class="error-message" id="lastNameError">Por favor, insira seu sobrenome</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError">Por favor, insira um e-mail válido</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="course">Curso</label>
+                    <select id="course" name="course" required>
+                        <option value="">Selecione seu curso</option>
+                        <option value="Análise de Desenvolvimento de Sistemas">Análise de Desenvolvimento de Sistemas</option>
+                        <option value="Engenharia de Software">Engenharia de Software</option>
+                        <option value="Ciência da Computação">Ciência da Computação</option>
+                        <option value="Sistemas de Informação">Sistemas de Informação</option>
+                    </select>
+                    <div class="error-message" id="courseError">Por favor, selecione um curso</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+                    </div>
+                    <div class="error-message" id="passwordError">A senha deve ter pelo menos 8 caracteres</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar Senha</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <div class="error-message" id="confirmPasswordError">As senhas não coincidem</div>
+                </div>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        
+        </div>
+    </div>
+
+<script>
+
+</script>
+
+</body>
+</html>

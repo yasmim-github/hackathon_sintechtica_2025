@@ -40,7 +40,7 @@ for filename in os.listdir(pdf_folder):
         print(f"Processing: {filename}")
         text = extract_text_from_pdf(pdf_path)
 
-        # Save the extracted text to a .txt file
+        # Salvando os arquivos extraídos para .txt
         output_filename = filename.replace(".pdf", ".txt")
         output_path = os.path.join(output_folder, output_filename)
         with open(output_path, 'w', encoding='utf-8') as f:
