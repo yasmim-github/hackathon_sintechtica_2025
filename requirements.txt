@@ -4,3 +4,6 @@ pytesseract
 pdf2image
 sentence-transformers
 chromadb
+
+node 
+packages included in package.json

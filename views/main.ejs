@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../static/Stylesheets/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <style src="../static/Stylesheets/main.css"></style>
+    <!--<style src="../public/Stylesheets/main.css"></style> !--->
+    <link rel="stylesheet" href="./Stylesheets/main.css"> <!--NOVA MANEIRA DE NOMENCLATURA-->
 </head>
 <body>
 
@@ -22,10 +22,10 @@
 
                 <div class="EFlexRow EFlexCenter">
 
-                    <a class="EProfileSettings EFlexCenter" href="/hackathon_sintechtica_2025/profileEdit.html">
+                    <a class="EProfileSettings EFlexCenter" href="/hackathon_sintechtica_2025/views/profileEdit.html">
                     
                         <div class="EImageHolder">
-                            <img src="../static/Pictures/Unico.png" class="EImage">
+                            <img src="./Pictures/Unico.png" class="EImage">
                         </div>
 
                     <div class="EFlexCol">
@@ -50,9 +50,9 @@
                 <br>
 
                 <div class="EAcheivmentsImages">
-                    <img src="/hackathon_sintechtica_2025/static/Pictures/lock-icon-free-vector.jpg" class="EImage2">
-                    <img src="/hackathon_sintechtica_2025/static/Pictures/lock-icon-free-vector.jpg" class="EImage2">
-                    <img src="/hackathon_sintechtica_2025/static/Pictures/lock-icon-free-vector.jpg" class="EImage2">
+                    <img src="./Pictures/lock-icon-free-vector.jpg" class="EImage2">
+                    <img src="./Pictures/lock-icon-free-vector.jpg" class="EImage2">
+                    <img src="./Pictures/lock-icon-free-vector.jpg" class="EImage2">
                 </div>
 
             </div>
@@ -77,7 +77,7 @@
                 <div class="EHelpContainer .EInlineFlexCol">
                     <div class="item2">
                         <a class="EInlineFlexRow ETextDecNone">
-                            <img class="EGitHubImg" src="/hackathon_sintechtica_2025/static/Pictures/Github.png">
+                            <img class="EGitHubImg" src="./Pictures/Github.png">
                             <p class="EInterFont ETextColor">GitHub</p>
                         </a>
                     </div>
@@ -89,11 +89,11 @@
 
         <div class="EContentColor EFlexCenter ">
 
-            <img src="../static/Pictures/akademos.svg" class="EAkademosIconPic"> 
+            <img src="./Pictures/akademos.svg" class="EAkademosIconPic"> 
             <br>
-            <form>
-                <input type="text">
-                <input type="submit">
+            <form action="/main" method="post">
+                <input type="text" name="UserInput" autocomplete="off">
+                <input type="submit" value="Send">
             </form>
         </div>
 

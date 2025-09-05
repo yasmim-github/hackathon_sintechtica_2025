@@ -63,6 +63,9 @@ async function initializeDatabase() {
     }
 }
 
+
+
+
 // Função para registrar usuário
 async function registerUser(userData) {
     let connection;
@@ -112,8 +115,11 @@ async function registerUser(userData) {
 
 // Rota para servir a página de registro
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'login.html'));
+    res.render("login.ejs");
 });
+
+
+
 
 // Rota para registro de usuário
 app.post('/api/register', async (req, res) => {
